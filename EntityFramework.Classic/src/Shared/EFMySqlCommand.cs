@@ -76,9 +76,9 @@ namespace MySql.Data.EntityFramework
         connection = value;
         command.Connection = (MySqlConnection)value;
         MySqlConnection _con = (MySqlConnection)connection;
-        if (_con.Settings.UseDefaultCommandTimeoutForEF)
+        if (_con.GetSettings().UseDefaultCommandTimeoutForEF)
         {
-          command.CommandTimeout = (int)(_con.Settings.DefaultCommandTimeout);
+          command.CommandTimeout = (int)(_con.GetSettings().DefaultCommandTimeout);
         }
       }
     }

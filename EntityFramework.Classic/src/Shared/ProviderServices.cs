@@ -235,7 +235,7 @@ namespace MySql.Data.MySqlClient
 		{
 			// we need the connection option to determine what version of the server
 			// we are connected to
-			MySqlConnectionStringBuilder msb = new MySqlConnectionStringBuilder((connection as MySqlConnection).Settings.ConnectionString);
+			MySqlConnectionStringBuilder msb = new MySqlConnectionStringBuilder((connection as MySqlConnection).GetSettings().ConnectionString);
 			msb.Database = null;
 			using (MySqlConnection c = new MySqlConnection(msb.ConnectionString))
 			{
@@ -548,7 +548,7 @@ namespace MySql.Data.MySqlClient
 					else if (serverVersion >= new Version(5, 6) && column.TypeUsage.EdmType.BaseType.Name == "DateTime")
 						sql.AppendFormat(" DEFAULT CURRENT_TIMESTAMP{0}", fcDateTimePrecision != null && Convert.ToByte(fcDateTimePrecision.Value) >= 1 ? "( " + fcDateTimePrecision.Value.ToString() + " )" : "");                              
 					else
-						throw new MySqlException("Invalid identity column type.");
+						throw MySqlExceptionCustom.Throw("Invalid identity column type.");
 				}      
         else if (facet.Value.Equals(StoreGeneratedPattern.Computed))
         {

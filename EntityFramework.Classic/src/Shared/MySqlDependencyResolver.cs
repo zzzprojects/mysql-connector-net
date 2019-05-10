@@ -129,13 +129,15 @@ namespace MySql.Data.EntityFramework
     /// <returns>The provider factory for the connection.</returns>
     public DbProviderFactory ResolveProviderFactory(DbConnection connection)
     {
-#if NET_45_OR_GREATER 
-      return DbProviderFactories.GetFactory(connection);
+#if NET_45_OR_GREATER
+        return DbProviderFactories.GetFactory(connection);
+#elif NETSTANDARD
+        return DbProviderFactoriesCore.GetFactory(connection);
 #else
-      return DbProviderFactories.GetFactory(MySqlProviderInvariantName.ProviderName);
+        return DbProviderFactories.GetFactory(MySqlProviderInvariantName.ProviderName);
 #endif
+        }
     }
-  }
 
   /// <summary>
   /// Gets a provider manifest token for the given connection.

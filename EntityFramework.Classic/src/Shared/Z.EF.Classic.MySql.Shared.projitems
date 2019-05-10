@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>47a8ef1d-4047-4085-9546-4caa6da9ebad</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Z.EF.Classic.MySql.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)EFMySqlCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)EFMySqlDataReader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Fragments\InputFragment.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Fragments\JoinFragment.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Fragments\SqlFragment.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Fragments\TableFragment.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Generators\DeleteGenerator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Generators\FunctionGenerator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Generators\FunctionProcessor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Generators\InsertGenerator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Generators\Scope.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Generators\SelectGenerator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Generators\SqlGenerator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Generators\UpdateGenerator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Metadata.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MySqlConnectionFactory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MySqlDependencyResolver.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MySqlEFConfiguration.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MySqlExecutionStrategy.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MySqlHistoryContext.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MySqlLogger.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MySqlMigrationSqlGenerator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MySqlSpatialDataReader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MySqlSpatialServices.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ProviderManifest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ProviderServices.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Statements\DeleteStatement.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Statements\InsertStatement.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Statements\SelectStatement.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Statements\UpdateStatement.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Z\ConnectionUtils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Z\MySqlException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Z\DBVersion.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Z\MySqlTrace.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Properties\" />
+  </ItemGroup>
+</Project>

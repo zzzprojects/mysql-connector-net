@@ -55,7 +55,7 @@ namespace MySql.Data.MySqlClient
 
     private static XmlReader GetManifest()
     {
-      return GetXmlResource("MySql.Data.EntityFramework.Properties.ProviderManifest.xml");
+      return GetXmlResource("Z.EntityFramework.Classic.MySql.Properties.ProviderManifest.xml");
     }
 
     protected override XmlReader GetDbInformation(string informationType)
