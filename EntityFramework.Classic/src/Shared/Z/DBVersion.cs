@@ -3,11 +3,12 @@ using MySql.Data.MySqlClient;
 
 namespace MySql.Data.Common
 {
-    internal struct DBVersion
+    /// <summary>(Source Taken from MySql)</summary>
+    internal struct DBVersionCustom
     {
         private readonly string _srcString;
 
-        public DBVersion(string s, int major, int minor, int build)
+        public DBVersionCustom(string s, int major, int minor, int build)
         {
             Major = major;
             Minor = minor;
@@ -27,7 +28,7 @@ namespace MySql.Data.Common
             get; private set;
         }
 
-        public static DBVersion Parse(string versionString)
+        public static DBVersionCustom Parse(string versionString)
         {
             int start = 0;
             int index = versionString.IndexOf('.', start);
@@ -50,7 +51,7 @@ namespace MySql.Data.Common
             val = versionString.Substring(start, i - start).Trim();
             int build = Convert.ToInt32(val, System.Globalization.NumberFormatInfo.InvariantInfo);
 
-            return new DBVersion(versionString, major, minor, build);
+            return new DBVersionCustom(versionString, major, minor, build);
         }
 
         public bool isAtLeast(int majorNum, int minorNum, int buildNum)

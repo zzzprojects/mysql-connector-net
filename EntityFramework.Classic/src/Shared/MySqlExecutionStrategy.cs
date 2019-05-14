@@ -78,7 +78,7 @@ namespace MySql.Data.EntityFramework
 
     protected override TimeSpan? GetNextDelay(Exception lastException)
     {
-      MySqlTrace.LogInformation(1, "Re");
+      MySqlTraceCustom.LogInformation(1, "Re");
       MySqlException myex = lastException as MySqlException;
       BackoffAlgorithm algorithm = null;
       if (!errorsToRetryOn.TryGetValue(myex.Number, out algorithm))
@@ -88,7 +88,7 @@ namespace MySql.Data.EntityFramework
       }
       TimeSpan? ts = algorithm.GetNextDelay();
       if( ts != null )
-        MySqlTrace.LogInformation(1, string.Format( "Retrying query for exception {0}", myex ));
+          MySqlTraceCustom.LogInformation(1, string.Format( "Retrying query for exception {0}", myex ));
       return ts;
     }
 
