@@ -35,12 +35,12 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Z.EntityFramework.Classic.MySql")]
-[assembly: AssemblyDescription("Entity Framework 6.0 supported")]
+[assembly: AssemblyDescription("MySql provider for Entity Framework Classic")]
 
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("ZZZ Projects")]
 [assembly: AssemblyProduct("Z.EntityFramework.Classic.MySql")]
-[assembly: AssemblyCopyright("Copyright © 2008, 2019, Oracle and/or its affiliates. All rights reserved.")]
+[assembly: AssemblyCopyright("Copyright ZZZ Projects; Copyright © 2008, 2019, Oracle and/or its affiliates. All rights reserved.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

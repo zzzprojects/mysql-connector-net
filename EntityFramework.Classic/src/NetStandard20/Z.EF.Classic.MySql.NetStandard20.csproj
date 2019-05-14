@@ -9,6 +9,10 @@
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>..\..\Key.snk</AssemblyOriginatorKeyFile>
     <DelaySign>false</DelaySign>
+    <Company>ZZZ Projects</Company>
+    <Description>MySql provider for Entity Framework Classic</Description>
+    <Copyright>Copyright ZZZ Projects; Copyright © 2008, 2019, Oracle and/or its affiliates. All rights reserved.</Copyright>
+    <Authors>ZZZ Projects</Authors>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
