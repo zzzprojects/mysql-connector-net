@@ -4,25 +4,29 @@ https://entityframework-classic.net/provider-mysql
 ## Setup Info for EF6
 
 ### Configuration
-In the provider: MySql.Data.Entity.EF6, Version=6.8.3.0, Culture=neutral, PublicKeyToken=afc61983f100d280 must be replaced by Z.MySql.Data.Entity.EF6, Version=6.0.0.0, Culture=neutral, PublicKeyToken=afc61983f100d280
+In the provider: `MySql.Data.Entity.EF6, Version=6.8.3.0, Culture=neutral, PublicKeyToken=afc61983f100d280` must be replaced by `Z.MySql.Data.Entity.EF6, Version=6.0.0.0, Culture=neutral, PublicKeyToken=afc61983f100d280`
 
 ### From
 
+```xml
 <entityFramework>
 	<defaultConnectionFactory type="MySql.Data.Entity.MySqlConnectionFactory, EntityFramework"></defaultConnectionFactory>
 	<providers>
 		<provider invariantName="MySql.Data.MySqlClient" type="MySql.Data.MySqlClient.MySqlProviderServices, MySql.Data.Entity.EF6, Version=6.8.3.0, Culture=neutral, PublicKeyToken=afc61983f100d280"></provider>
 	</providers>
 </entityFramework>
+```
 
 ### To
 
+```xml
 <entityFramework>
 	<defaultConnectionFactory type="MySql.Data.Entity.MySqlConnectionFactory, EntityFramework"></defaultConnectionFactory>
 	<providers>
 		<provider invariantName="MySql.Data.MySqlClient" type="MySql.Data.MySqlClient.MySqlProviderServices, Z.MySql.Data.Entity.EF6, Version=6.0.0.0, Culture=neutral, PublicKeyToken=afc61983f100d280"></provider>
 	</providers>
 </entityFramework>
+```
 
 ---
 Copyright (c) 2004, 2019, Oracle and/or its affiliates. All rights reserved.
