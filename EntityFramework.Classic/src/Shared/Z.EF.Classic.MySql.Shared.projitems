@@ -40,6 +40,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Statements\SelectStatement.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Statements\UpdateStatement.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Z\ConnectionExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Z\DbProviderFactoriesCore.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Z\MySqlException.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Z\DBVersion.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Z\MySqlTrace.cs" />
