@@ -34,12 +34,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Z.EntityFramework.Classic.MySql")]
+[assembly: AssemblyTitle("Z.MySql.Data.Entity.EF6")]
 [assembly: AssemblyDescription("MySql provider for Entity Framework Classic")]
 
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("ZZZ Projects")]
-[assembly: AssemblyProduct("Z.EntityFramework.Classic.MySql")]
+[assembly: AssemblyProduct("Z.MySql.Data.Entity.EF6")]
 [assembly: AssemblyCopyright("Copyright ZZZ Projects; Copyright © 2008, 2019, Oracle and/or its affiliates. All rights reserved.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
