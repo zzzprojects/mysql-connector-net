@@ -1,12 +1,12 @@
-## Library Powered By
+## Sponsors
 
-This library is powered by [Entity Framework Extensions](https://entityframework-extensions.net/?z=github&y=entityframework-plus)
+ZZZ Projects owns and maintains **Z.MySql.Data.Entity ** as part of our [mission](https://zzzprojects.com/mission) to add value to the .NET community
 
-<a href="https://entityframework-extensions.net/?z=github&y=entityframework-plus">
-<kbd>
-<img src="https://zzzprojects.github.io/images/logo/entityframework-extensions-pub.jpg" alt="Entity Framework Extensions" />
-</kbd>
-</a>
+Through [Entity Framework Extensions](https://entityframework-extensions.net/?utm_source=zzzprojects&utm_medium=zmysldataentity) and [Dapper Plus](https://dapper-plus.net/?utm_source=zzzprojects&utm_medium=zmysldataentity), we actively sponsor and help key open-source libraries grow.
+
+[![Entity Framework Extensions](https://raw.githubusercontent.com/zzzprojects/Z.ExtensionMethods/master/entity-framework-extensions-sponsor.png)](https://entityframework-extensions.net/bulk-insert?utm_source=zzzprojects&utm_medium=zmysldataentity)
+
+[![Dapper Plus](https://raw.githubusercontent.com/zzzprojects/Z.ExtensionMethods/master/dapper-plus-sponsor.png)](https://dapper-plus.net/bulk-insert?utm_source=zzzprojects&utm_medium=zmysldataentity)
 
 ---
 
@@ -56,17 +56,6 @@ For additional downloads and the source of MySQL Connector/NET, visit
 
 MySQL Connector/NET is brought to you by the MySQL team at Oracle.
 
-## Contribute
-
-The best way to contribute is by **spreading the word** about the library:
-
- - Blog it
- - Comment it
- - Star it
- - Share it
- 
-A **HUGE THANKS** for your help.
-
 ## More Projects
 
 - Projects:
@@ -83,3 +72,4 @@ A **HUGE THANKS** for your help.
 - and much more!
 
 To view all our free and paid projects, visit our website [ZZZ Projects](https://zzzprojects.com/).
+
