@@ -1,6 +1,6 @@
 ## Sponsors
 
-ZZZ Projects owns and maintains **Z.MySql.Data.Entity ** as part of our [mission](https://zzzprojects.com/mission) to add value to the .NET community
+ZZZ Projects owns and maintains **Z.MySql.Data.Entity** as part of our [mission](https://zzzprojects.com/mission) to add value to the .NET community
 
 Through [Entity Framework Extensions](https://entityframework-extensions.net/?utm_source=zzzprojects&utm_medium=zmysldataentity) and [Dapper Plus](https://dapper-plus.net/?utm_source=zzzprojects&utm_medium=zmysldataentity), we actively sponsor and help key open-source libraries grow.
 
@@ -72,4 +72,5 @@ MySQL Connector/NET is brought to you by the MySQL team at Oracle.
 - and much more!
 
 To view all our free and paid projects, visit our website [ZZZ Projects](https://zzzprojects.com/).
+
 
